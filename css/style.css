@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: lightgray;
+    font-family: sans-serif;
+}
+header a:hover{
+    color: black;
+}
+ 
+ header img{
+    width:15px;
+    height: 15px;
+}
+
+
+#hero-bg{
+    position: relative;
+}
+
+#hero-text{
+    position: absolute;
+    font-family: sans-serif;
+     width: fit-content;
+} 
+#hero-text p{
+    font-weight: bold;
+    background-color: rgb(55, 165, 114);
+}
+section{
+    background-color: rgb(233, 227, 227);
+}
+#underline h4{
+    border-bottom: 2px solid gray;
+}
+
+.box-pic{
+        width: 600px;
+}
+
+#info-section{
+    background-color: rgb(31, 29, 29);
+}
+.line-under-text{
+    border-bottom: 1px solid gray;
+}
+.line-over-text{
+    border-top: 1px solid gray;
+}
+footer{
+    background-color: black;
+}
+
+.posted-pic{
+    width: 100vw;
+}
+
+
+
+
+@media screen and (min-width: 280px){
+    #hero-text p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 350px){
+    #hero-text p{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    #hero-text{
+         top: 15%;
+       left: 12%;
+    }
+    #hero-text p{
+      
+       font-size: 2vw;
+    }
+} 
+@media screen and (min-width: 1024px){
+    #hero-text{
+        top:15%;
+        left:3%;
+    }
+    #hero-text p{
+        font-size:1.7vw;
+        padding: 18px !important;
+    }
+}
