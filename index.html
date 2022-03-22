@@ -8,6 +8,24 @@
     <title>My Website</title>
 </head>
 <body>
+    <div id="mobile-menu">
+        <a id="closing-btn" href="#" class="h4">X</a>
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-12 text-center py-2">
+                <nav>
+                    <div >  <a class="text-decoration-none " href="#">Home</a></div>
+                    <div >  <a class="text-decoration-none " href="#">Portfolio</a></div>
+                    <div > <a class="text-decoration-none " href="#">Staff</a></div>
+                    <div ><a class="text-decoration-none " href="#">Features</a></div>
+                    <div > <a class="text-decoration-none " href="#">Blog</a></div>
+                    <div ><a class="text-decoration-none " href="#">Contacts</a></div>
+                    <div > <a class="text-decoration-none "  href="#">Download</a></div>
+                </nav>
+            </div>
+        </div>        
+    </div>
+</div>
         <header>
             <div class="container-fluid  p-md-3 ">
             <div class="row align-items-baseline ">
@@ -24,8 +42,10 @@
                     <a class="text-decoration-none "  href="#">Download</a>
                     
                 </div>
-              <div class=" col-6 d-flex  d-lg-none align-items-baseline justify-content-end justify-content-md-center"><img src="img/menu.png" alt="menu-pic">
-                <p class="h5 ">Menu</p></div> 
+              <div class=" col-6 d-flex  d-lg-none align-items-baseline justify-content-end justify-content-md-center">
+                  <a id="menu-icon" href="#"> <img class="pb-1"src="img/menu.png" alt="menu-pic">
+                </a><p class="h6 ">Menu</p>
+               </div> 
               
             </div>
         </div>
@@ -160,6 +180,23 @@
                     </footer>
     <script src="js/jquery-3.6.0.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+    <script>
+
+      window.addEventListener("load", function(){
+          let mobileBtn=document.getElementById("menu-icon");
+          let mobileMenu=document.getElementById("mobile-menu");
+          
+          let closeBtn=document.getElementById("closing-btn");
+
+            mobileBtn.addEventListener("click", function(){
+                mobileMenu.style.display = "block";
+            })
+            closeBtn.addEventListener("click", function(){
+                mobileMenu.style.display = "none";
+            })
+      })
+      
+
+    </script>
 </body>
 </html>

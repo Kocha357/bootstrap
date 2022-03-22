@@ -58,12 +58,38 @@ footer{
     width: 100vw;
 }
 
-
+#mobile-menu{
+    border-radius: 15px;
+    background-color: gray;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    left: 200px;
+    bottom: 300px;
+    z-index: 2;
+    display: none;
+    
+}
+#mobile-menu a{
+    color: white;
+    font-size: 24px;
+    border-bottom: 1px solid white;
+}
+#mobile-menu a:hover{
+    color: black;
+}
+#closing-btn{
+    position: absolute;
+    left: 500px;
+}
 
 
 @media screen and (min-width: 280px){
     #hero-text p{
         font-size: 10px;
+    }
+    #closing-btn{
+        left: 120px;
     }
 }
 
